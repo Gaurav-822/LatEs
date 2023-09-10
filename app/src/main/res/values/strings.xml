@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LatEs</string>
+    <!--NEWS RELATED TEXT, later we will use an API to call the news-->
+    <string name="news1">News 1</string>
+    <string name="news2">News 2</string>
+    <string name="news3">News 3</string>
+    <string name="news4">News 4</string>
+    <string name="news5">News 5</string>
+    <string name="news6">News 6</string>
+    <string name="news7">News 7</string>
+    <string name="news8">News 8</string>
+    <string name="news9">News 9</string>
+    <string name="news10">News 10</string>
+</resources>
