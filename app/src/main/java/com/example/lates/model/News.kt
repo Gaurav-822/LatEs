@@ -1,3 +1,9 @@
 package com.example.lates.model
 
-data class News(val stringResourceId: Int)
+import androidx.annotation.StringRes
+import androidx.annotation.DrawableRes
+
+data class News(
+    @StringRes val stringResourceId: Int,
+    @DrawableRes val imageResourceId: Int
+    )
