@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">LatEs</string>
     <!--NEWS RELATED TEXT, later we will use an API to call the news-->
-    <string name="url1">https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png</string>
+    <string name="url1">https://c.biztoc.com/p/33979ffb1c1e9540/og.webp</string>
+    <string name="url2">https://c.biztoc.com/p/bf2f6b4c82dca05c/s.webp</string>
     <string name="news1">News 1</string>
     <string name="news2">News 2</string>
     <string name="news3">News 3</string>

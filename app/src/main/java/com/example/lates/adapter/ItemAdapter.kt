@@ -1,6 +1,7 @@
 package com.example.lates.adapter
 
 import android.content.Context
+import android.content.res.Resources
 import android.media.Image
 import android.text.Layout
 import android.view.LayoutInflater
@@ -41,6 +42,5 @@ class ItemAdapter(
         Glide.with(context)
             .load(item.imageUrl)
             .into(holder.imageView)
-//        holder.imageView.setImageResource(item.imageResourceId)
     }
 }
