@@ -5,5 +5,6 @@ import androidx.annotation.DrawableRes
 
 data class News(
     @StringRes val stringResourceId: Int,
-    @DrawableRes val imageResourceId: Int
+    @DrawableRes val imageUrl: Int,
+//    @DrawableRes val imageResourceId: Int
     )

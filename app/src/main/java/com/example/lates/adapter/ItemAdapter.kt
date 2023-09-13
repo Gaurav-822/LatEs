@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.lates.R
 import com.example.lates.model.News
 
@@ -35,7 +36,11 @@ class ItemAdapter(
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
+
         holder.textView.text = context.resources.getString(item.stringResourceId)
-        holder.imageView.setImageResource(item.imageResourceId)
+        Glide.with(context)
+            .load(item.imageUrl)
+            .into(holder.imageView)
+//        holder.imageView.setImageResource(item.imageResourceId)
     }
 }
