@@ -40,16 +40,17 @@ class ItemAdapter(
         val item = dataset[position]
 
         holder.itemView.setOnClickListener {
-//            Toast.makeText(context, item.stringResourceId, Toast.LENGTH_SHORT).show()
-//            val intent = Intent(context, NewsActivity::class.java)
             val intent = Intent(it.context, SecondActivity::class.java)
             intent.putExtra("name", context.resources.getString(item.stringResourceId));
+            intent.putExtra("image", context.resources.getString(item.imageUrl))
+            intent.putExtra("description", context.resources.getString(item.description))
+            intent.putExtra("source", context.resources.getString(item.source))
             it.context.startActivity(intent)
         }
 
         holder.textView.text = context.resources.getString(item.stringResourceId)
         Glide.with(context)
-            .load(item.imageUrl)
+            .load(context.resources.getString(item.imageUrl))
             .into(holder.imageView)
     }
 }

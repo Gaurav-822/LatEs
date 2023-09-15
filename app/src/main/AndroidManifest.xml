@@ -26,7 +26,6 @@
         </activity>
     </application>
 
-    <!-- To make our app use the internet, try this when not working!-->
     <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
