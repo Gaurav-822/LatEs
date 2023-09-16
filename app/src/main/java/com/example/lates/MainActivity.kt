@@ -1,10 +1,16 @@
 package com.example.lates
 
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
+import android.graphics.LinearGradient
+import android.graphics.Shader
+import android.graphics.Shader.TileMode
 import android.os.Bundle
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lates.adapter.ItemAdapter
 import com.example.lates.data.Datasource
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

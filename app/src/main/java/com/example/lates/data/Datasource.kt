@@ -8,8 +8,8 @@ import com.example.lates.model.News
 class Datasource {
     fun loadNews(): List<News> {
         return listOf<News> (
-            News(R.string.news1, R.string.url1, R.string.description1, R.string.src1),
             News(R.string.news2, R.string.url2, R.string.description2, R.string.src2),
+            News(R.string.news1, R.string.url1, R.string.description1, R.string.src1),
             News(R.string.news3, R.string.url3, R.string.description3, R.string.src3),
             News(R.string.news4, R.string.url4, R.string.description4, R.string.src4),
             News(R.string.news5, R.string.url5, R.string.description5, R.string.src5),
