@@ -50,4 +50,7 @@ dependencies {
     // Glide Dependencies
     implementation 'com.github.bumptech.glide:glide:4.13.2'
 
+    // Card View Dependencies
+    implementation 'androidx.cardview:cardview:1.0.0'
+
 }
