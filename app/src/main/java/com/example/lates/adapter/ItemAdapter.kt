@@ -7,17 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.lates.networking.Article
 import com.example.lates.R
 import com.example.lates.SecondActivity
-import com.example.lates.model.News
 
 
 class ItemAdapter(
     private val context: Context,
-    private val dataset: List<News>
+    private val dataset: List<Article>
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
@@ -41,16 +40,16 @@ class ItemAdapter(
 
         holder.itemView.setOnClickListener {
             val intent = Intent(it.context, SecondActivity::class.java)
-            intent.putExtra("name", context.resources.getString(item.stringResourceId));
-            intent.putExtra("image", context.resources.getString(item.imageUrl))
-            intent.putExtra("description", context.resources.getString(item.description))
-            intent.putExtra("source", context.resources.getString(item.source))
+            intent.putExtra("name", item.title);
+            intent.putExtra("image", item.urlToImage)
+            intent.putExtra("description", item.description)
+            intent.putExtra("source", item.url)
             it.context.startActivity(intent)
         }
 
-        holder.textView.text = context.resources.getString(item.stringResourceId)
+        holder.textView.text = item.title
         Glide.with(context)
-            .load(context.resources.getString(item.imageUrl))
+            .load(item.urlToImage)
             .into(holder.imageView)
     }
 }
