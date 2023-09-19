@@ -25,7 +25,8 @@
             android:text="@string/app_name"
             android:textAlignment="textStart"
             android:textColor="#FF499B"
-            android:textSize="34sp" />
+            android:textSize="34sp"
+            android:layout_marginBottom="10dp"/>
 
 
         <com.facebook.shimmer.ShimmerFrameLayout
@@ -40,6 +41,10 @@
                 <include layout="@layout/shimmer_layout"></include>
                 <include layout="@layout/shimmer_layout"></include>
                 <include layout="@layout/shimmer_layout"></include>
+                <include layout="@layout/shimmer_layout"></include>
+                <include layout="@layout/shimmer_layout"></include>
+                <include layout="@layout/shimmer_layout"></include>
+                <include layout="@layout/shimmer_layout"></include>
             </LinearLayout>
         </com.facebook.shimmer.ShimmerFrameLayout>
 
@@ -47,7 +52,6 @@
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="8dp"
             android:scrollbars="vertical"
             android:visibility="gone"
             app:layoutManager="LinearLayoutManager"
