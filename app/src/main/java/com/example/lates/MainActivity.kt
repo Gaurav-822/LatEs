@@ -2,22 +2,31 @@ package com.example.lates
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lates.adapter.ItemAdapter
 import com.example.lates.networking.NewsApi
 import com.example.lates.networking.NewsService
+import com.facebook.shimmer.ShimmerFrameLayout
 import retrofit2.Call
 import retrofit2.Response
 
 
 class MainActivity : AppCompatActivity() {
     lateinit var adapter: ItemAdapter
+    lateinit var shimmerFrameLayout: ShimmerFrameLayout
+    lateinit var recyclerView: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var pageNum: Int = 1
+
+        // Shimmer
+        shimmerFrameLayout = findViewById(R.id.shimmer)
+        recyclerView = findViewById(R.id.recycler_view)
+        shimmerFrameLayout.startShimmer()
+
         getNews()
     }
     private fun getNews() {
@@ -25,6 +34,10 @@ class MainActivity : AppCompatActivity() {
         news.enqueue(object:retrofit2.Callback<NewsApi> {
             override fun onResponse(call: Call<NewsApi>, response: Response<NewsApi>) {
                 Log.d("GBK", "Success!")
+                shimmerFrameLayout.stopShimmer()
+                shimmerFrameLayout.visibility = View.GONE
+                recyclerView.visibility = View.VISIBLE
+
                 val news = response.body()
                 if (news != null) {
                     Log.d("GBK", news.toString())

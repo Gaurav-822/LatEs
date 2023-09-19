@@ -53,4 +53,7 @@ dependencies {
     // Card View Dependencies
     implementation 'androidx.cardview:cardview:1.0.0'
 
+    // Facebook Shimmer Effect Dependencies
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
 }

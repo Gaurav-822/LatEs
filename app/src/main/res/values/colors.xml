@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <color name="shimmer_color1">#EF94FF</color>
+    <color name="shimmer_color2">#F4C9FF</color>
+</resources>

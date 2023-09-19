@@ -6,10 +6,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-//https://newsapi.org/v2/top-headlines?country=in&apiKey=39ca51cf12cc47eda925bc10c16db603
 
 const val BASE_URL = "https://newsapi.org/"
-const val API_KEY = "39ca51cf12cc47eda925bc10c16db603"
+const val API_KEY = "9275211a5c19488f990df97632564bdf"
 
 interface NewsInterface {
     @GET("v2/top-headlines?apiKey=$API_KEY")
