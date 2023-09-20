@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.lates.adapter.ItemAdapter
 import com.example.lates.networking.NewsApi
 import com.example.lates.networking.NewsService
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var adapter: ItemAdapter
     lateinit var shimmerFrameLayout: ShimmerFrameLayout
     lateinit var recyclerView: RecyclerView
+    lateinit var refreshLayout: SwipeRefreshLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,7 +29,18 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recycler_view)
         shimmerFrameLayout.startShimmer()
 
+        // Refresh
+        refreshLayout = findViewById(R.id.refresh)
+
         getNews()
+
+        refreshLayout.setOnRefreshListener {
+            shimmerFrameLayout.visibility = View.VISIBLE
+            recyclerView.visibility = View.GONE
+            shimmerFrameLayout.startShimmer()
+            getNews()
+            refreshLayout.isRefreshing = false
+        }
     }
     private fun getNews() {
         val news = NewsService.newsInstance.getHeadlines("in", 1)
@@ -49,7 +62,8 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<NewsApi>, t: Throwable) {
-                Log.d("GBK", "Failure!")
+                Log.d("GBK", "Retrying!")
+                getNews()
             }
         })
     }

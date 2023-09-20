@@ -56,4 +56,6 @@ dependencies {
     // Facebook Shimmer Effect Dependencies
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
 
+    // Swipe Refresh Dependencies
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 }

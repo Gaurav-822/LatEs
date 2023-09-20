@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LatEs</string>
+    <string name="app_name">News20</string>
 
     <string name="news1">Starfield IGN India First Impressions: Overwhelming Yet Mesmerizing</string>
     <string name="url1">https://sm.ign.com/t/ign_in/screenshot/default/mg-17_m3mj.2560.png</string>
@@ -11,66 +11,5 @@ The initial 9 hours playing Starfield were really something as I have never felt
 
 While a lot has already been said and debated about this freedom and the technical aspects of the game, I think the technicalities of how Bethesda offers you this freedom should not be the focus of the game. I know that I have not even scratched the surface of the main questline, but I still want to share my initial thoughts about the game.
     </string>
-
-
-    <string name="news2">Apple iPhone 15 Series Officially Announced with Hardware-Based Ray Tracing, USB-C and Price Details</string>
-    <string name="url2">https://sm.ign.com/t/ign_in/news/a/apple-ipho/apple-iphone-15-series-officially-announced-with-hardware-ba_gh1x.2560.jpg</string>
-    <string name="src2">https://in.ign.com/apple-iphone-15/193949/news/apple-officially-announces-the-iphone-15-series</string>
-    <string name="description2">
-        As part of its Wonderlust Event, Apple has officially announced the next iteration of its smartphone — the iPhone 15.
-
-The iPhone 15 and 15 Pro feature a 6.1-inch display, while the iPhone 15 Plus and 15 Pro Max include a 6.7-inch display. Similar to the last two phones before it, the iPhone 15 Pro and Pro Max are capable of a 120Hz refresh rate, while the iPhone 15 and 15 Plus are stuck at 60Hz.
-    </string>
-
-    <string name="news3">Disentangling the 2030 global renewable energy target</string>
-    <string name="url3">https://th-i.thgim.com/public/incoming/ly92id/article67308460.ece/alternates/LANDSCAPE_1200/Energy_Technology_Race_Investors.JPEG-0cced.jpg</string>
-    <string name="src3">https://www.thehindu.com/opinion/lead/disentangling-the-2030-global-renewable-energy-target/article67308452.ece</string>
-    <string name="description3">
-        The presidency of the 28th Conference of Parties (COP28) of the United Nations Framework Convention on Climate Change (UNFCCC), to be held in Dubai (November 30-December 12), has called for agreement on a global target of tripling renewable energy capacity from current levels by 2030. This figure appears in the G-20 declaration too, though only as an aspirational goal to be encouraged.
-
-There is an undoubted win-win appeal to the proposal of this easily understandable global target. However, any serious deconstruction of this target should significantly dampen such enthusiasm.
-    </string>
-
-    <string name="news4">Shaping Future Coders: Parul University Unveils Innovative MCA Program</string>
-    <string name="url4">https://th-i.thgim.com/public/brandhub/ocdi92/article67284358.ece/alternates/LANDSCAPE_660/Well-equipped%20labs%20at%20Parul%20University%20for%20its%20MCA%20Program.jpg</string>
-    <string name="src4">https://www.thehindu.com/brandhub/shaping-future-coders-parul-university-unveils-innovative-mca-program/article67284359.ece?cx_testId=16&amp;cx_testVariant=cx_1&amp;cx_artPos=0&amp;cx_experienceId=EXKY23I917G6#cxrecs_s</string>
-    <string name="description4">
-        Parul University, a trailblazer in the realm of higher education, is thrilled to announce the debut of its state-of-the-art Master of Computer Applications (MCA) program. Spanning three years, this integrated program offers specialized tracks in cutting-edge domains such as Advanced Operating Systems, Big Data Analytics, Blockchain Technology, Cloud Computing, Cybersecurity and Forensics, Full Stack Web Development, Gaming Technology, Web and Mobile Computing, and Web Technologies.
-
-Steeped in a tradition of academic eminence and dedicated to nurturing students for the dynamic realm of Information Technology, the university introduces this program to equip budding IT professionals with the proficiencies and knowledge requisite for excelling within the swiftly evolving technological milieu.
-
-The MCA program at Parul University is meticulously designed to furnish students with a comprehensive grasp of computer science, software development, and IT management. Orchestrated through a carefully curated curriculum, students will acquire hands-on experience in programming languages, database administration, network oversight, web development, and beyond. This program is underpinned by a pragmatic approach, ensuring that graduates not only master theoretical constructs but also adeptly apply them across real-world contexts.
-    </string>
-
-    <string name="news5">NavIC and its integration into iPhone 15 | Explained</string>
-    <string name="url5">https://th-i.thgim.com/public/sci-tech/technology/gadgets/l2qu4v/article67311920.ece/alternates/LANDSCAPE_1200/Apple%20iPhone%2015%20Pro.jpg</string>
-    <string name="src5">https://www.thehindu.com/sci-tech/technology/navic-and-its-integration-into-iphone-15-explained/article67311882.ece</string>
-    <string name="description5">
-        The story so far: The newly launched Apple iPhone 15 Pro and iPhone 15 Pro Max will support India’s own GPS system-- commonly known as NavIC. This is the first batch of Made in India iPhones which will see support for the indigenous GPS system.
-
-The government is keen to ask other smartphone players to integrate NavIC into their hardware by 2025. India’s homegrown navigation system is going to compete with U.S.’s GPS, EU’s Galileo, Russia’s GLONASS and China’s BeiDou.
-    </string>
-
-    <string name="news6">Protecting floodplains is the need of the hour</string>
-    <string name="url6">https://th-i.thgim.com/public/news/s4e40k/article67096869.ece/alternates/LANDSCAPE_660/reduction-in-yamuna-flood-plains-boundaries-in-delhi-Source-Khan-and-Bajpai-2014.png</string>
-    <string name="src6">https://www.thehindu.com/opinion/op-ed/protecting-floodplains-is-the-need-of-the-hour/article67303030.ece</string>
-    <string name="description6">
-        Humanity is struggling with a shortage of water as well as an excess. As the World Health Organization stated, “Floods are increasing in frequency and intensity, and the frequency and intensity of extreme precipitation is expected to continue to increase due to climate change.” Last year, devastating floods in Pakistan claimed 1,700 lives and affected 33 million people. The 2013 floods in Uttarakhand, the 2014 floods in the Kashmir Valley, the 2015 floods in Chennai, and the 2017 floods in Gujarat all caused loss of lives and livelihoods and massive damage to infrastructure. This year too, we saw the devastating effects of rain-induced floods and landslides in several districts of Himachal Pradesh. The Yamuna water level crossed the 208.5 metre mark, breaking a 45-year-old record. All these disasters point to the severity of the situation and the urgent need to tackle it.
-    </string>
-
-    <string name="news7">Feedback Is Now Too Harsh. The New Word Is Feedforward...</string>
-    <string name="url7">https://images.wsj.net/im-792969/social</string>
-    <string name="src7">https://www.wsj.com/lifestyle/careers/companies-worker-management-feedback-feedforward-hr-9758d6a7</string>
-    <string name="description7">
-        More companies are ditching anxiety-inducing corporate lingo for what they see as gentler terms. Reviews become ‘connect’ sessions.
-    </string>
-
-    <string name="news8">Using cinema to stoke communal tensions</string>
-    <string name="url8">https://th-i.thgim.com/public/latest-news/8pm2qi/article67309069.ece/alternates/FREE_1200/Razkar.jpg</string>
-    <string name="src8">https://www.thehindu.com/opinion/op-ed/using-cinema-to-stoke-communal-tensions/article67307190.ece</string>
-    <string name="description8">
-        On September 17, 1948, Hyderabad was integrated into the Union of India when Indian Army tanks rolled into the princely state and forced the Razakars, the private army of the Nizam, to lay down arms along with the Hyderabad Army. This event has become a divisive issue 75 years later thanks to a cinematic flourish being added to it. The poster of a movie called Razakar — Silent Genocide of Hyderabad, released in July, showed a young man with a religious tuft being impaled by a bayonet. The financier of the movie is a BJP leader. At the poster-release function, BJP leaders including Bandi Sanjay and former Maharashtra Governor Ch Vidyasagar Rao spoke about the Razakar terror. Mr. Bandi Sanjay noted that the movie was inspired by The Kashmir Files. The film has the potential to colour public opinion and also affect political calculations in Telangana.
-    </string>
-
 
 </resources>

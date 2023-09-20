@@ -40,16 +40,30 @@ class ItemAdapter(
 
         holder.itemView.setOnClickListener {
             val intent = Intent(it.context, SecondActivity::class.java)
-            intent.putExtra("name", item.title);
-            intent.putExtra("image", item.urlToImage)
+            intent.putExtra("name", item.title)
+            val temp = item.urlToImage
+            if (temp == null){
+                intent.putExtra("image", "https://www.feednavigator.com/var/wrbm_gb_food_pharma/storage/images/_aliases/news_large/9/2/8/5/235829-6-eng-GB/Feed-Test-SIC-Feed-20142.jpg")
+
+            }
+            else{
+                intent.putExtra("image", item.urlToImage)
+            }
             intent.putExtra("description", item.description)
             intent.putExtra("source", item.url)
             it.context.startActivity(intent)
         }
 
         holder.textView.text = item.title
-        Glide.with(context)
-            .load(item.urlToImage)
-            .into(holder.imageView)
+        if (item.urlToImage == null){
+            Glide.with(context)
+                .load("https://www.feednavigator.com/var/wrbm_gb_food_pharma/storage/images/_aliases/news_large/9/2/8/5/235829-6-eng-GB/Feed-Test-SIC-Feed-20142.jpg")
+                .into(holder.imageView)
+        }
+        else{
+            Glide.with(context)
+                .load(item.urlToImage)
+                .into(holder.imageView)
+        }
     }
 }
