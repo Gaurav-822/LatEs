@@ -1,11 +1,15 @@
 package com.example.lates
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
+import android.view.View
+import android.webkit.WebView
 import android.widget.ImageView
+import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -24,28 +28,25 @@ class SecondActivity : AppCompatActivity() {
         val img = intent.getStringExtra("image")
         val src = intent.getStringExtra("source")
 
+        // Forwarding to web_view
+        val intent_web = Intent(this, WebActivity::class.java)
+
         // Image
         val imageView: ImageView = findViewById(R.id.image)
         Glide.with(this)
             .load(img)
             .into(imageView);
         imageView.setOnClickListener {
-            // Create an Intent with the ACTION_VIEW action and the URL that you want to open.
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(img))
-
-            // Call startActivity() to open the URL.
-            startActivity(intent)
+            intent_web.putExtra("src", img)
+            startActivity(intent_web)
         }
 
         // Headline
         val textView: TextView = findViewById(R.id.headline)
         textView.text = headline
         textView.setOnClickListener {
-            // Create an Intent with the ACTION_VIEW action and the URL that you want to open.
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(src))
-
-            // Call startActivity() to open the URL.
-            startActivity(intent)
+            intent_web.putExtra("src", src)
+            startActivity(intent_web)
         }
 
         // Description
